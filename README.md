@@ -4,9 +4,9 @@
 [![Action status](https://github.com/idimetrix/cron-typedi-decorators/workflows/build/badge.svg)](https://github.com/idimetrix/cron-typedi-decorators/actions)
 [![GitHub License](https://img.shields.io/github/license/idimetrix/cron-typedi-decorators)](https://github.com/idimetrix/cron-typedi-decorators/blob/master/LICENSE)
 
-[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/3LTBGYAHQCDE4ZbEiTreJjzgnsDhY6X2D2)](https://en.cryptobadges.io/donate/3LTBGYAHQCDE4ZbEiTreJjzgnsDhY6X2D2)
-[![Donate with Litecoin](https://en.cryptobadges.io/badge/micro/LcHsJH13A8PmHJQwpbWevGUebZwhWNMXgS)](https://en.cryptobadges.io/donate/LcHsJH13A8PmHJQwpbWevGUebZwhWNMXgS)
-[![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/0x54499ee409687E9C43589693093D004a0cbfEE72)](https://en.cryptobadges.io/donate/0x54499ee409687E9C43589693093D004a0cbfEE72)
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/micro/???)](https://en.cryptobadges.io/donate/???)
+[![Donate with Litecoin](https://en.cryptobadges.io/badge/micro/???)](https://en.cryptobadges.io/donate/???)
+[![Donate with Ethereum](https://en.cryptobadges.io/badge/micro/???)](https://en.cryptobadges.io/donate/???)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/idimetrix/)
 
 **Package to implement cron jobs via a class based system in Typescript.**
@@ -245,13 +245,13 @@ Please open a issue when you encounter any bugs 🐞 or if you have an idea for 
 
 ## 4. Buy me a coffee
 
-[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/idimetrix/)
+[![Support via PayPal](https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg)](https://www.paypal.me/)
 
-[![Donate with Bitcoin](https://en.cryptobadges.io/badge/big/3LTBGYAHQCDE4ZbEiTreJjzgnsDhY6X2D2)](https://en.cryptobadges.io/donate/3LTBGYAHQCDE4ZbEiTreJjzgnsDhY6X2D2)
+[![Donate with Bitcoin](https://en.cryptobadges.io/badge/big/???)](https://en.cryptobadges.io/donate/???)
 
-[![Donate with Litecoin](https://en.cryptobadges.io/badge/big/LcHsJH13A8PmHJQwpbWevGUebZwhWNMXgS)](https://en.cryptobadges.io/donate/LcHsJH13A8PmHJQwpbWevGUebZwhWNMXgS)
+[![Donate with Litecoin](https://en.cryptobadges.io/badge/big/???)](https://en.cryptobadges.io/donate/???)
 
-[![Donate with Ethereum](https://en.cryptobadges.io/badge/big/0x54499ee409687E9C43589693093D004a0cbfEE72)](https://en.cryptobadges.io/donate/0x54499ee409687E9C43589693093D004a0cbfEE72)
+[![Donate with Ethereum](https://en.cryptobadges.io/badge/big/???)](https://en.cryptobadges.io/donate/???)
 
 ---
 

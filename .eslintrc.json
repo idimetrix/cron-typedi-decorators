@@ -1,0 +1,39 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": 2,
+    "@typescript-eslint/ban-types": [0],
+    "@typescript-eslint/camelcase": [0],
+    "@typescript-eslint/interface-name-prefix": [0],
+    "@typescript-eslint/no-explicit-any": [0],
+    "@typescript-eslint/no-inferrable-types": [0],
+    //    "@typescript-eslint/typedef": [
+    //      "error",
+    //      {
+    //        "arrayDestructuring": true,
+    //        "arrowCallSignature": true,
+    //        "arrowParameter": true,
+    //        "callSignature": true,
+    //        "explicitFunctionReturnType": true,
+    //        "memberVariableDeclaration": true,
+    //        "objectDestructuring": true,
+    //        "parameter": true,
+    //        "propertyDeclaration": true,
+    //        "variableDeclaration": true,
+    //        "variableDeclarationIgnoreFunction": true
+    //      }
+    //    ],
+    "no-console": "error",
+    "no-debugger": "error"
+  }
+}

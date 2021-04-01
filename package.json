@@ -1,0 +1,105 @@
+{
+  "name": "cron-typedi-decorators",
+  "version": "1.0.0",
+  "description": "Typescript Typedi decorators for Cron jobs",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "readme": "README.md",
+  "tags": [
+    "typescript",
+    "typescript-decorators",
+    "typescript-cron-decorators",
+    "typescript-typedi-decorators",
+    "typescript-cron-typedi-decorators",
+    "cron",
+    "cron-typedi",
+    "cron-decorators",
+    "cron-typedi-decorators",
+    "typedi-decorators",
+    "controller"
+  ],
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:all": "rimraf ./lib && rimraf ./dist && yarn build && yarn build:test",
+    "build:test": "tsc -project ./test/tsconfig.json",
+    "start:test": "yarn build:test && node --inspect ./dist/server.js",
+    "lint:all": "yarn lint:style && yarn lint:code",
+    "lint:all:fix": "yarn lint:style:fix && yarn lint:code:fix",
+    "lint:code": "eslint {src,test}/**/*.{js,jsx,ts,tsx}",
+    "lint:code:fix": "yarn lint:code --fix",
+    "lint:style": "stylelint '(src|test)/**/*.(css|scss|sass)' '*.(css|scss|sass)' --allow-empty-input",
+    "lint:style:fix": "yarn lint:style --fix",
+    "prettier": "prettier --write '(src|test)/**/*.{js,jsx,ts,tsx,htm,html,json,xml,yml,css,scss,sass}' '*.{js,jsx,ts,tsx,htm,html,json,xml,yml,css,scss,sass}'",
+    "format": "npm run prettier && npm run lint:all:fix",
+    "bootstrap": "yarn install && yarn format",
+    "ncu": "ncu -u --timeout 100000 && yarn bootstrap"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "repository": "git+ssh://git@github.com/idimetrix/cron-typedi-decorators.git",
+  "keywords": [],
+  "homepage": "https://github.com/idimetrix/cron-typedi-decorators#readme",
+  "author": {
+    "name": "Dmitry Selikhov",
+    "email": "selikhov.dmitrey@gmail.com",
+    "url": "https://www.linkedin.com/in/dimetrix/"
+  },
+  "contributors": [
+    {
+      "name": "Dmitry Selikhov",
+      "email": "selikhov.dmitrey@gmail.com",
+      "url": "https://www.linkedin.com/in/dimetrix/"
+    }
+  ],
+  "dependencies": {
+    "cron": "^1.8.2",
+    "glob": "^7.1.6",
+    "logvis": "^1.0.6",
+    "moment": "^2.29.1",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@types/cron": "^1.7.2",
+    "@types/express": "^4.17.11",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^14.14.37",
+    "@typescript-eslint/eslint-plugin": "^4.20.0",
+    "@typescript-eslint/parser": "^4.20.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "express": "^4.17.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-prettier": "^1.2.0",
+    "stylelint-scss": "^3.19.0",
+    "typedi": "^0.10.0",
+    "typescript": "^4.2.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,css,json,md,yml}": [
+      "prettier --write"
+    ],
+    "*.{js,ts}": [
+      "eslint --fix"
+    ]
+  }
+}
