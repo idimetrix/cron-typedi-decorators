@@ -53,11 +53,10 @@ function importClassesFromDirectories(directories: string[], formats = ['.js', '
  * @returns {(srv: any) => void} Function that is used to register all endpoints.
  */
 export function registerController(jobs: Function[] | string[]): void {
-  let jobClasses: Function[];
   if (jobs && jobs.length) {
-    jobClasses = (jobs as any[]).filter((controller) => controller instanceof Function);
-    const handlerDirs = (jobs as any[]).filter((controller) => typeof controller === 'string');
-    jobClasses.push(...importClassesFromDirectories(handlerDirs));
+    const jobClasses: Function[] = (jobs as any[])
+      .filter((controller) => controller instanceof Function)
+      .concat(importClassesFromDirectories((jobs as any[]).filter((controller) => typeof controller === 'string')));
 
     CronManager.registerController(jobClasses);
   }
