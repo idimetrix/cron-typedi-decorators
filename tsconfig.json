@@ -27,5 +27,5 @@
     "lib": ["ES5", "es5", "ES2015", "ES6", "es6", "ES2016", "DOM", "ESNext"]
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*", "test/**/*"]
+  "include": ["src/**/*"]
 }
